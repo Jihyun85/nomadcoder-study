@@ -1,11 +1,12 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 /* variable */
 @import "variable";
 
 /* mixins */
-
+@import "mixin";
 
 * {
   box-sizing: border-box;
@@ -22,6 +23,8 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
+  background-color: white;
+  z-index: 1;
 
   a {
     font-size: 14px;
@@ -51,4 +54,46 @@ body {
       margin-left: 40px;
     }
   }
+}
+
+main {
+  margin: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .shopify-section {
+    .halves {
+      background-color: #f9dbbe;
+      width: 98.9vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      .halves__img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .halves__detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 38px 55px;
+        .halves__text {
+          width: 490px;
+          height: 215px;
+          p {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.2;
+            text-align: center;
+            font-size: 36px;
+          }
+        }
+        .halves__btn {
+          @include btn();
+        }
+      }
+    }
+  }  
 }
