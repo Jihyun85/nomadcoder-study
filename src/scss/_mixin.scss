@@ -1,0 +1,15 @@
+@mixin btn {
+  color: $black;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.9;
+  text-transform: uppercase;
+  padding: 20px 85px;
+  border: 1.5px solid $black;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  &:hover {
+    background-color: $black;
+    color: white;
+  }
+  @content;
+}
