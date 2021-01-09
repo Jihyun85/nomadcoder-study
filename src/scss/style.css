@@ -502,6 +502,51 @@ section {
   opacity: 0.7;
 }
 
+footer {
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 65px 0;
+  text-align: center;
+  background: #f3ede8;
+}
+
+footer .footer__column {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer__column h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #727272;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+footer .footer__column ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
 .btn {
   color: #414141;
   font-size: 12px;
