@@ -201,12 +201,44 @@ section {
   }
 }
 
-
-
-
-
-
-
+.journal-tile {
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  .journal-tile__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    .journal-tile__img {
+      img{
+        width: 100%;
+      }
+    }
+    .journal-tile__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 38px 70px;
+      background-color: #f3ede8;
+      &>span {
+        @include sanserif();
+        font-size: 18px;
+        font-weight: 1.2px
+      }
+      h5 {
+        @include sanserif();
+      }
+      a {
+        @include subtitle();
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
 
 .btn {
   @include btn();
