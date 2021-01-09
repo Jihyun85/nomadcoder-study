@@ -75,6 +75,26 @@ main {
           justify-content: center;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+.first__bg {
+  background-color: #f9dbbe;
+}
+
+.second__bg {
+  background-color: #f3ede8;
+}
+
+.fourth__bg {
+  background-color: #dee8e9;
+}
+
+.eighth__bg {
+  background: #f9dbbe;
+}
+
 .halves {
   width: 100%;
   display: -ms-grid;
@@ -83,7 +103,6 @@ main {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  margin-bottom: 80px;
 }
 
 .halves .halves__img img {
@@ -126,26 +145,9 @@ main {
 
 .halves .halves__detail .halves__text-and-btn .halves__text p {
   font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  font-size: 36px;
-}
-
-.halves .halves__btn {
-  color: #414141;
-  font-size: 13px;
-  font-weight: 600;
-  opacity: 0.9;
-  text-transform: uppercase;
-  padding: 20px 85px;
-  border: 1.5px solid #414141;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.halves .halves__btn:hover {
-  background-color: #414141;
-  color: white;
 }
 
 .halves--sm {
@@ -156,21 +158,164 @@ main {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
-.first__bg {
-  background-color: #f9dbbe;
+.product-tile {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.second__bg {
-  background-color: #f3ede8;
+.product-tile h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
 }
 
-.fourth__bg {
-  background-color: #dee8e9;
+.product-tile h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
 }
 
-.eighth__bg {
-  background: #f9dbbe;
+.product-tile .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+}
+
+.product-tile .products .product {
+  width: 30%;
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-tile .products .product img {
+  width: 98%;
+}
+
+.product-tile .products .product .product__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-tile .products .product .product__detail .product__power-couple {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.product-tile .products .product .product__detail .product__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-size: 28px;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.product-tile .products .product .product__detail .product__price {
+  font-size: 11px;
+  color: #b9b6b6;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.product-tile .items {
+  margin: 8vh 0;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.product-tile .items .items__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid black;
+}
+
+.product-tile .items .items__img:last-child {
+  border-right: none;
+}
+
+.product-tile .items .items__img img {
+  width: 60%;
+  margin: 10px;
+}
+
+.product-tile .items .items__img span {
+  font-size: 11px;
+  color: #b9b6b6;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.btn {
+  color: #414141;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 20px 80px;
+  border: 1.5px solid #414141;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #414141;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
