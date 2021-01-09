@@ -295,6 +295,32 @@ section {
   }
 }
 
+.insta-tile {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  .insta-tile__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    position: reletive;
+    .insta-tile__element {
+      background-color: white;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s linear;
+        &:hover {
+          opacity: 0.7
+        }
+      }
+    }
+  }
+}
+
+
 
 .btn {
   @include btn();
