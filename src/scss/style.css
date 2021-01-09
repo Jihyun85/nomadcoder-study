@@ -54,6 +54,11 @@ body {
   margin-left: 40px;
 }
 
+.header .header__logo img {
+  width: 70px;
+  cursor: pointer;
+}
+
 .header .header__right .header__basket {
   margin-left: 40px;
 }
