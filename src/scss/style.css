@@ -315,8 +315,8 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
 }
 
 .journal-tile .journal-tile__grid .journal-tile__img img {
@@ -362,6 +362,107 @@ section {
 
 .journal-tile .journal-tile__grid .journal-tile__text a:hover {
   font-weight: 600;
+}
+
+.email-tile {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email-tile h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.email-tile p {
+  margin: 5vh;
+  width: 60%;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 30px;
+  position: relative;
+}
+
+.email-tile .email-tile__input .email-tile__typing {
+  width: 50vw;
+  border: none;
+  border-bottom: 1px solid #727272;
+  padding: 20px 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input .email-tile__typing::-webkit-input-placeholder {
+  color: #727272;
+  opacity: 0.8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input .email-tile__typing:-ms-input-placeholder {
+  color: #727272;
+  opacity: 0.8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input .email-tile__typing::-ms-input-placeholder {
+  color: #727272;
+  opacity: 0.8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input .email-tile__typing::placeholder {
+  color: #727272;
+  opacity: 0.8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-size: 36px;
+}
+
+.email-tile .email-tile__input .email-tile__typing:focus {
+  outline: none;
+}
+
+.email-tile .email-tile__input .email-tile__submit {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #727272;
+  padding: 15px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.email-tile .email-tile__input .email-tile__submit:focus {
+  outline: none;
 }
 
 .btn {
