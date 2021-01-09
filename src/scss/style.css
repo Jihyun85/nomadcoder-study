@@ -70,25 +70,28 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main .shopify-section .halves {
-  background-color: #f9dbbe;
-  width: 98.9vw;
+.halves {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  margin-bottom: 80px;
 }
 
-main .shopify-section .halves .halves__img img {
+.halves .halves__img img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-main .shopify-section .halves .halves__detail {
+.halves .halves__detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,22 +105,33 @@ main .shopify-section .halves .halves__detail {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 38px 55px;
+  padding: 38px 70px;
 }
 
-main .shopify-section .halves .halves__detail .halves__text {
-  width: 490px;
-  height: 215px;
+.halves .halves__detail .halves__text-and-btn {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-main .shopify-section .halves .halves__detail .halves__text p {
+.halves .halves__detail .halves__text-and-btn .halves__text p {
   font-family: 'Cormorant Garamond', serif;
   line-height: 1.2;
   text-align: center;
   font-size: 36px;
 }
 
-main .shopify-section .halves .halves__detail .halves__btn {
+.halves .halves__btn {
   color: #414141;
   font-size: 13px;
   font-weight: 600;
@@ -129,8 +143,34 @@ main .shopify-section .halves .halves__detail .halves__btn {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-main .shopify-section .halves .halves__detail .halves__btn:hover {
+.halves .halves__btn:hover {
   background-color: #414141;
   color: white;
+}
+
+.halves--sm {
+  width: 80%;
+}
+
+.halves--sm h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.first__bg {
+  background-color: #f9dbbe;
+}
+
+.second__bg {
+  background-color: #f3ede8;
+}
+
+.fourth__bg {
+  background-color: #dee8e9;
+}
+
+.eighth__bg {
+  background: #f9dbbe;
 }
 /*# sourceMappingURL=style.css.map */
