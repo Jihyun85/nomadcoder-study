@@ -110,6 +110,15 @@ section {
       grid-template-rows: auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .halves {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+}
+
 .halves .halves__img img {
   width: 100%;
   height: 100%;
@@ -153,6 +162,14 @@ section {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .halves .halves__detail .halves__text-and-btn .halves__text p {
+    font-size: 26px;
+    width: 440px;
+    margin: 30px;
+  }
 }
 
 .halves--sm h5 {

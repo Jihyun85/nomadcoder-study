@@ -22,10 +22,14 @@
   letter-spacing: 1.5px;
 }
 
-@mixin sanserif {
+@mixin sanserif($screen : lg) {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 36px;
-  @content;
+  @if $screen == 'lg' {
+    font-size: 36px;
+    @content;
+  } @else if  $screen =="sm" {
+    font-size: 20px;
+  }
 }
 
 
@@ -34,5 +38,9 @@
     @media screen and (max-width: $breakpoint-md) {
       @content;
     }
-  }  
+  } @else if $screen == 'sm' {
+    @media screen and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  }
 }
