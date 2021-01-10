@@ -27,3 +27,12 @@
   font-size: 36px;
   @content;
 }
+
+
+@mixin responsive($screen) {
+  @if $screen == 'md' {
+    @media screen and (max-width: $breakpoint-md) {
+      @content;
+    }
+  }  
+}

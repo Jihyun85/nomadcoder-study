@@ -155,10 +155,6 @@ section {
   text-align: center;
 }
 
-.halves--sm {
-  width: 80%;
-}
-
 .halves--sm h5 {
   text-transform: uppercase;
   font-size: 12px;
@@ -167,7 +163,6 @@ section {
 }
 
 .product-tile {
-  width: 80%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,7 +302,6 @@ section {
 }
 
 .journal-tile {
-  width: 80%;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -372,7 +366,6 @@ section {
 }
 
 .email-tile {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,7 +466,6 @@ section {
 }
 
 .insta-tile {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +502,24 @@ section {
 
 .insta-tile .insta-tile__grid .insta-tile__element img:hover {
   opacity: 0.7;
+}
+
+.halves--sm,
+.product-tile,
+.journal-tile,
+.email-tile,
+.insta-tile {
+  width: 80%;
+}
+
+@media screen and (max-width: 1350px) {
+  .halves--sm,
+  .product-tile,
+  .journal-tile,
+  .email-tile,
+  .insta-tile {
+    width: 90%;
+  }
 }
 
 footer {

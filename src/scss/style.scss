@@ -124,14 +124,12 @@ section {
 }
 
 .halves--sm {
-  width: 80%;
   h5 {
     @include subtitle();
   }
 }
 
 .product-tile {
-  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -209,7 +207,6 @@ section {
 }
 
 .journal-tile {
-  width: 80%;
   height: auto;
   justify-content: center;
   .journal-tile__grid {
@@ -250,7 +247,6 @@ section {
 }
 
 .email-tile {
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,7 +301,6 @@ section {
 }
 
 .insta-tile {
-  width: 80%;
   display: flex;
   justify-content: center;
   .insta-tile__grid {
@@ -328,6 +323,17 @@ section {
         }
       }
     }
+  }
+}
+
+.halves--sm,
+.product-tile,
+.journal-tile,
+.email-tile,
+.insta-tile {
+  width: 80%;
+  @include responsive(md) {
+    width: 90%;
   }
 }
 
