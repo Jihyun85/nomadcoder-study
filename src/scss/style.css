@@ -85,19 +85,19 @@ section {
 }
 
 .first__bg {
-  background-color: #f9dbbe;
+  background-color: #c7073a63;
 }
 
 .second__bg {
-  background-color: #f3ede8;
+  background-color: #f8d5d3bd;
 }
 
 .fourth__bg {
-  background-color: #dee8e9;
+  background-color: #f8d5d3bd;
 }
 
 .eighth__bg {
-  background: #f9dbbe;
+  background: #c7073a63;
 }
 
 .halves {
@@ -326,6 +326,7 @@ section {
 
 .journal-tile .journal-tile__grid .journal-tile__img img {
   width: 100%;
+  display: block;
 }
 
 .journal-tile .journal-tile__grid .journal-tile__text {
@@ -343,7 +344,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 38px 70px;
-  background-color: #f3ede8;
+  background-color: #f8d5d3bd;
 }
 
 .journal-tile .journal-tile__grid .journal-tile__text > span {
@@ -354,6 +355,7 @@ section {
 }
 
 .journal-tile .journal-tile__grid .journal-tile__text h5 {
+  text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-size: 36px;
 }
@@ -497,10 +499,13 @@ section {
 }
 
 .insta-tile .insta-tile__grid .insta-tile__element img {
+  display: block;
   width: 100%;
   height: auto;
   -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .insta-tile .insta-tile__grid .insta-tile__element img:hover {
@@ -517,7 +522,7 @@ footer {
           justify-content: space-evenly;
   padding: 65px 0;
   text-align: center;
-  background: #f3ede8;
+  background: #f8d5d3bd;
 }
 
 footer .footer__column {
