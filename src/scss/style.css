@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .header {
@@ -253,6 +253,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .product-tile .products .product .product__detail .product__power-couple {
@@ -657,6 +658,24 @@ footer {
   background: #f8d5d3bd;
 }
 
+@media screen and (max-width: 1000px) {
+  footer {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5vh 0;
+  }
+}
+
 footer .footer__column {
   width: 20%;
   display: -webkit-box;
@@ -687,6 +706,21 @@ footer .footer__column ul li {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .footer__column {
+    width: 80%;
+    height: auto;
+    padding: 24px 0 20px 0;
+    border-bottom: 1px solid #727272;
+  }
+  footer .footer__column:nth-child(3) {
+    border-bottom: none;
+  }
+  footer .footer__column h6 {
+    margin-bottom: 20px;
+  }
 }
 
 .btn {
