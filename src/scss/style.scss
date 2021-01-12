@@ -230,6 +230,7 @@ section {
       grid-auto-columns: 1fr;
       grid-auto-rows: auto;
     }
+    
     .journal-tile__img {
       img {
         width: 100%;
@@ -262,6 +263,13 @@ section {
         @include subtitle();
         &:hover {
           font-weight: 600;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .journal-tile__text {
+        @include responsive(sm) {
+          order: 2;
         }
       }
     }

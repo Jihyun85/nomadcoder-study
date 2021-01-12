@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .header {
@@ -405,6 +405,14 @@ section {
 
 .journal-tile .journal-tile__grid .journal-tile__text a:hover {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .journal-tile .journal-tile__grid:nth-child(2) .journal-tile__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .email-tile {
