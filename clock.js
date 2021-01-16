@@ -1,6 +1,7 @@
 'use strict';
 
-const clock = document.querySelector('.js-clock');
+const container = document.querySelector('.js-clock-container');
+const clock = document.querySelector('h1');
 
 function getTime() {
   const date = new Date();
@@ -13,6 +14,7 @@ function getTime() {
 }
 
 function init() {
+  getTime();
   setInterval(getTime, 1000);
 }
 
