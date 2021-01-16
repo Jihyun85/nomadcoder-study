@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="clock.js" defer></script>
+    <script src="greeting.js" defer></script>
 
     <title>Chrome app -re</title>
   </head>
@@ -12,7 +13,9 @@
     <div class="js-clock-container">
       <h1 class="js-clock">00:00</h1>
     </div>
-    <p class="js-greeting">Hello stranger!</p>
-    <input type="text" placeholder="Write your name!" class="js-name-input" />
+    <p class="js-greeting">Hello stranger</p>
+    <form class="js-name-form name-form">
+      <input type="text" placeholder="Write your name!" />
+    </form>
   </body>
 </html>
