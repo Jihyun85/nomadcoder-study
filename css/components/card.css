@@ -48,10 +48,6 @@
   color: white;
 }
 
-.card--lg {
-  border-bottom: 1px solid var(--light-color);
-}
-
 .card--md img {
   width: 55px;
   height: 55px;
