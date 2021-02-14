@@ -1,0 +1,48 @@
+.icons,
+.suggestions {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: around;
+  margin: 30px -20px;
+}
+
+.icons__column,
+.suggestion {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons__column i,
+.suggestion i {
+  font-size: 25px;
+}
+
+.icons__column span,
+.suggestion span {
+  font-size: 14px;
+  text-align: center;
+}
+
+.suggestions {
+  height: 70px;
+}
+
+.suggestion__icon-box {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.suggestion__icon-box img {
+  width: 30px;
+  height: 30px;
+}

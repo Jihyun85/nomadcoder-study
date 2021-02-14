@@ -10,9 +10,20 @@
   align-items: center;
 }
 
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .card__title {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+}
+
+.card__number,
+.card__chat {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .card__column img {
@@ -56,4 +67,8 @@
 .card--sm img {
   width: 50px;
   height: 50px;
+}
+
+.card--sm .card__title {
+  font-size: 16px;
 }

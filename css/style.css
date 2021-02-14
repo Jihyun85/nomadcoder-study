@@ -17,6 +17,7 @@
 @import "pages/login.css";
 @import "pages/friends.css";
 @import "pages/find.css";
+@import "pages/more.css";
 
 body {
   font-family: "Poor Story", sans-serif;
