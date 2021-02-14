@@ -1,0 +1,68 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0 50px 0;
+}
+
+.login-info__welcome {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login-info p {
+  width: 300px;
+  font-size: 14px;
+  color: var(--grey);
+  text-align: center;
+  font-weight: 500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  width: 80%;
+  height: 40px;
+  padding: 5px 0;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  cursor: pointer;
+}
+
+.login-form input:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.login-form input::placeholder {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+  height: 40px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.find-account {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-grey);
+}

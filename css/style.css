@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+@import "reset.css";
+
+/* variables*/
+@import "variables.css";
+
+/* components */
+@import "components/status-bar.css";
+@import "components/header.css";
+
+/* pages */
+@import "pages/login.css";
+@import "pages/friends.css";
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+header,
+main {
+  padding: 0 20px;
+}

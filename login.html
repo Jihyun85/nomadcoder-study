@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -21,22 +22,28 @@
       <div class="status-bar__column">
         <i class="fab fa-bluetooth-b"></i>
         <i class="fas fa-wifi"></i>
-        <span>100%</span>
+        <span class="status-bar__battery">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
-    <div class="login-info">
-      <h4 class>Welcome to LightTalk</h4>
-      <p>
-        if you have a Light Account, log in with your email or phone number.
-      </p>
-    </div>
-    <form class="login-form">
-      <input type="email" placeholder="Email" required="true" />
-      <input type="password" placeholder="password" required="true" />
-      <input type="submit" placeholder="Log In" />
-    </form>
-    <button>Sign Up</button>
-    <p class="find-account">Find Lgiht Account or Password</p>
+
+    <main>
+      <section class="login">
+        <div class="login-info">
+          <h4 class="login-info__welcome">Welcome to LightTalk</h4>
+          <p>
+            if you have a Light Account, log in with your email or phone number.
+          </p>
+        </div>
+
+        <form class="login-form">
+          <input type="email" placeholder="Email" required="true" />
+          <input type="password" placeholder="password" required="true" />
+          <input type="submit" value="Log In" />
+          <input type="submit" value="Sign Up" />
+        </form>
+        <p class="find-account">Find Light Account or Password</p>
+      </section>
+    </main>
   </body>
 </html>
