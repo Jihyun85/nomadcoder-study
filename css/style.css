@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Ubuntu:wght@300;400;500&display=swap");
 
+/* reset */
 @import "reset.css";
 
 /* variables*/
@@ -17,7 +18,7 @@
 @import "pages/friends.css";
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", "Poor Story", sans-serif;
   letter-spacing: 0.2px;
   line-height: 1.2;
 }
