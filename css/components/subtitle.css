@@ -1,0 +1,7 @@
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+  font-size: 12px;
+  padding: 10px 0;
+}

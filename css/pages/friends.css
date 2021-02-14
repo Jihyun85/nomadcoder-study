@@ -1,0 +1,19 @@
+.friends-info {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: var(--light-color);
+  margin: 0 -20px;
+}
+
+.friends-info p {
+  margin: 0 10px;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.friends-info i {
+  color: var(--main-color);
+}

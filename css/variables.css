@@ -1,6 +1,6 @@
 :root {
-  --light-grey: #eeeeee;
-  --grey: #b2bec3;
-  --dark-grey: #84817a;
+  --light-color: #eeeeee;
+  --main-color: #b2bec3;
+  --dark-color: #84817a;
   --bg-color: white;
 }

@@ -8,6 +8,9 @@
 /* components */
 @import "components/status-bar.css";
 @import "components/header.css";
+@import "components/card.css";
+@import "components/subtitle.css";
+@import "components/nav.css";
 
 /* pages */
 @import "pages/login.css";
