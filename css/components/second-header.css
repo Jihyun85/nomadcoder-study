@@ -13,6 +13,10 @@
   justify-content: flex-end;
 }
 
+.second-header__column:nth-child(3) img {
+  margin-left: 15px;
+}
+
 .second-header__left-arrow {
   width: 20px;
   height: 20px;

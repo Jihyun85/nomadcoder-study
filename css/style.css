@@ -20,6 +20,8 @@
 @import "pages/find.css";
 @import "pages/more.css";
 @import "pages/settings.css";
+@import "pages/chatting.css";
+
 body {
   font-family: "Poor Story", sans-serif;
   letter-spacing: 0.7px;
