@@ -106,3 +106,16 @@
 .open-chat__heart i {
   margin-right: 5px;
 }
+
+.open-chat__heart i:hover {
+  animation: 0.5s toRed ease-in-out infinite;
+}
+
+@keyframes toRed {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}

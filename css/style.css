@@ -14,6 +14,7 @@
 @import "components/nav.css";
 @import "components/second-header.css";
 @import "components/badge.css";
+@import "components/no-mobile.css";
 
 /* pages */
 @import "pages/intro.css";
