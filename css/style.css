@@ -13,8 +13,10 @@
 @import "components/subtitle.css";
 @import "components/nav.css";
 @import "components/second-header.css";
+@import "components/badge.css";
 
 /* pages */
+@import "pages/intro.css";
 @import "pages/login.css";
 @import "pages/friends.css";
 @import "pages/find.css";
@@ -29,9 +31,12 @@ body {
   color: black;
   padding-bottom: 60px;
   height: calc(100vh - 80px);
+  background-color: var(--bg-color);
 }
 
 header,
 main {
   padding: 0 20px;
+  background-color: var(--bg-color);
+  color: var(--black);
 }

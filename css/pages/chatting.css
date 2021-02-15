@@ -1,5 +1,6 @@
 .chatting {
   display: flex;
+  height: calc(100vh - 85px);
   flex-direction: column;
 }
 
@@ -48,10 +49,11 @@
 .chatting__bubble {
   max-width: 50vw;
   padding: 10px;
-  background-color: burlywood;
+  background-color: var(--black);
   border-radius: 15px;
   border-top-left-radius: 0;
   font-size: 14px;
+  color: var(--light-color);
 }
 
 .chatting__time {
@@ -93,7 +95,8 @@
 .chat-input__submit {
   width: 30px;
   height: 30px;
-  background-color: brown;
+  background-color: var(--black);
   border: none;
   border-radius: 50%;
+  color: white;
 }

@@ -10,6 +10,17 @@ header h1 {
   font-size: 24px;
 }
 
+header a {
+  position: relative;
+}
+
 .header__icons img {
   margin-left: 15px;
+  cursor: pointer;
+}
+
+.header__dot {
+  position: absolute;
+  bottom: 10px;
+  right: -15px;
 }

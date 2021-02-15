@@ -1,7 +1,24 @@
+.first-page {
+  margin-top: 20px;
+  width: 100%;
+  height: calc(100vh - 20px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09131e;
+  animation: fadeOut 2s linear forwards;
+}
+
+.first-page img {
+  filter: invert(100%);
+}
+
 .login {
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .login-info {
@@ -13,16 +30,14 @@
 
 .login-info__welcome {
   font-size: 22px;
-  font-weight: 500;
   margin-bottom: 20px;
 }
 
 .login-info p {
   width: 300px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--main-color);
   text-align: center;
-  font-weight: 500;
 }
 
 .login-form {
@@ -34,11 +49,12 @@
 .login-form input {
   width: 80%;
   height: 40px;
-  padding: 5px 0;
+  padding: 5px 5;
   font-size: 14px;
   border: none;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--main-color);
   cursor: pointer;
+  font-family: "Poor Story", sans-serif;
 }
 
 .login-form input:nth-child(2) {
@@ -47,22 +63,36 @@
 
 .login-form input::placeholder {
   color: var(--main-color);
-  font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .login-form input[type="submit"] {
   height: 40px;
   border: none;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 10px;
+  font-size: 18px;
 }
 
 .find-account {
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
-  font-weight: 500;
   color: var(--dark-color);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }

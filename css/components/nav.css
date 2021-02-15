@@ -12,12 +12,21 @@ nav {
 
 nav > a {
   width: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .nav__column img {
   width: 28px;
   height: 28px;
+}
+
+.nav__badge,
+.nav__dot {
+  position: absolute;
+  top: 7px;
+  left: calc(50% + 3px);
 }

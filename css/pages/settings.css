@@ -4,6 +4,13 @@
   align-items: center;
   height: 40px;
   padding: 10px 0;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings-row:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .settings-row__left-box {
@@ -30,5 +37,6 @@
 
 .settings-row__right-box {
   font-size: 14px;
+  margin-right: 5px;
   color: var(--main-color);
 }

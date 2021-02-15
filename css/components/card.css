@@ -46,19 +46,6 @@
   font-size: 14px;
   margin-bottom: 5px;
 }
-
-.card__badge {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  background-color: tomato;
-  border-radius: 50%;
-  color: white;
-}
-
 .card--md img {
   width: 55px;
   height: 55px;
