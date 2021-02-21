@@ -16,7 +16,7 @@
   <body>
     <div class="overlay"></div>
     <div class="container">
-      <span class="clock jsClock">00:00</span>
+      <span class="clock hidden jsClock"></span>
 
       <article class="greeting jsGreeting">
         <p class="greeting__text jsGreetingText">Hello, what's your name?</p>
@@ -30,9 +30,13 @@
         </form>
       </article>
 
-      <article class="todos jsToDos">
+      <article class="todos hidden jsToDos">
         <form class="todos__form jsToDosForm">
-          <input class="todos__input jsToDosInput" placeholder="Today's task" />
+          <input
+            class="todos__input jsToDosInput"
+            type="text"
+            placeholder="Today's task"
+          />
         </form>
         <div class="todos__load-box">
           <p>today</p>
