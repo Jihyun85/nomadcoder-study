@@ -11,6 +11,7 @@ const getTime = () => {
 };
 
 const init = () => {
+  getTime();
   setInterval(getTime, 1000);
 };
 

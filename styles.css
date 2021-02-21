@@ -121,6 +121,14 @@ input[type="text"]::placeholder {
   outline: none;
 }
 
+.weather {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.808);
+}
+
 .hidden {
   display: none;
 }
