@@ -1,0 +1,219 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+/* variables */
+@import 'variable';
+
+/* mixin */
+@import 'mixin';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Lora', serif;
+  cursor: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: none;
+  &:hover {
+    color: black;
+  }
+  &:active {
+    color: blue;
+  }
+}
+
+.custom-cursor {
+  width: 50px;
+  height: 50px;
+  background-color: $bg-color;
+  border-radius: 50%;
+  opacity: 0.8;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  transition: 0.5s all ease;
+  transition-property: background, transform;
+  box-shadow: 2px 7px 10px 0px rgba(50, 50, 50, 0.54);
+}
+
+.link-grow {
+  width: 55px;
+  height: 55px;
+  background-color: $main-color;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  h1 {
+    font-size: $font-md;
+  }
+  nav {
+    justify-self: start;
+    padding-left: 5vw;
+    font-family: $san-serif;
+    ul {
+      display: flex;
+      li {
+        min-width: 55px;
+        list-style: none;
+        font-size: $font-xs;
+        margin-right: 30px;
+      }
+    }
+  }
+  .header__icon {
+    padding-right: 5vw;
+    justify-self: end;
+  }
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100vh;
+  .pic1 {
+    background-image: url("https://i.picsum.photos/id/534/1000/1000.jpg?hmac=BeJNWq9WgjvkOR-8UbEum2nSjwW3Lw0jnQFUl4dqmp8");
+    background-image: cover;
+
+  }
+
+  .pic2 {
+    background-image: url("https://i.picsum.photos/id/500/1000/1000.jpg?hmac=ab66VTa3iNvZEbKBug8DaFVxwGJ8qV0sYlfB3pANuJI");
+    background-size: cover;
+  }
+
+  .pic3 {
+    background-image: url("https://i.picsum.photos/id/190/1000/1000.jpg?hmac=f-l5-ZKcUBwuD423-ufkS2NZjqBurCJ167wwGgqkEYU");
+    background-size: cover;
+  }
+
+  .pic4 {
+    background-image: url("https://i.picsum.photos/id/106/1000/1000.jpg?hmac=iWNYUAKllk_GfeYH2QJNaFV7rimXMzblGILOLol7jPQ");
+    background-size: cover;
+  }
+
+  .grid__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .grid__text-wrap {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      p {        
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      span {
+        @include link();
+      }
+      
+    }
+  }
+}
+
+.description {
+  width: 100%;
+  height: 50vh;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  h3 {
+    font-size: 35px;
+    
+  }
+  p {
+    width: 60%;
+    font-size: 28px;
+    text-align: center;
+  }
+  span {
+    @include link();
+  }
+}
+
+.collections {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: auto;
+  gap: 2px;
+  .collection {
+    width: 100%;
+    position: relative;
+    img {
+      z-index: -1;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      transition: 0.3s all;
+      &:hover {
+        filter: blur(4px);
+      }
+    }
+  }
+}
+
+
+.two-cell {
+  grid-column: span 2;
+}
+
+.blur {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(105, 105, 105);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 10vh 10vw;
+  .footer__column {
+    width: 20%;
+    font-family: $san-serif;
+    line-height: 1.6;
+    h6 {
+      font-size: $font-sm;
+      font-family: $san-serif;
+      color: rgb(207, 204, 204);
+    }
+    ul li {
+      font-size: $font-sm;
+      color: white;
+      list-style: none;
+    }
+    .footer__bottom {
+      margin-top: 20px;
+    }
+  }
+}
