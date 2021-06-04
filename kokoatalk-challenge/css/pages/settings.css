@@ -1,0 +1,42 @@
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px 0;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings-row:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.settings-row__left-box {
+  display: flex;
+  align-items: center;
+}
+
+.settings-row__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.settings-row__left-box i {
+  font-size: 20px;
+}
+
+.setting-row__title span {
+  font-size: 18px;
+}
+
+.settings-row__right-box {
+  font-size: 14px;
+  margin-right: 5px;
+  color: var(--main-color);
+}
