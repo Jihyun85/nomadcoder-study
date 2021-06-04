@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <title>MomenTum Clone By Jihyun</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <span class="clock hidden jsClock"></span>
+
+      <article class="greeting jsGreeting">
+        <p class="greeting__text jsGreetingText">Hello, what's your name?</p>
+        <form class="greeting__form jsGreetingForm">
+          <input
+            class="greeting__input jsGreetingInput"
+            type="text"
+            required="true"
+            placeholder="Write your name..."
+          />
+        </form>
+      </article>
+
+      <article class="todos hidden jsToDos">
+        <form class="todos__form jsToDosForm">
+          <input
+            class="todos__input jsToDosInput"
+            type="text"
+            placeholder="Today's task"
+          />
+        </form>
+        <div class="todos__load-box">
+          <p>today</p>
+          <ul class="todos__list jsToDosList"></ul>
+        </div>
+      </article>
+    </div>
+    <p class="weather jsWeather"></p>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
