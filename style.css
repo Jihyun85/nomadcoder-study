@@ -1,0 +1,124 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+header h1 {
+  font-size: 15px;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+}
+
+header h1 a {
+  text-decoration: none;
+}
+
+header h1 a:visited {
+  color: black;
+}
+
+header h1 a:hover {
+  color: #ffa000;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  font-size: 13px;
+  list-style: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  color: #ffa000;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 50px;
+  padding: 0 15px;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+main .articles {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 15px;
+  cursor: pointer;
+}
+
+main .articles article {
+  margin-bottom: 30px;
+}
+
+main .articles article:hover h3 {
+  color: #ffa000;
+}
+
+main .articles article img {
+  width: 100%;
+}
+
+main .articles article h3 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+main .articles article p {
+  width: 60%;
+  margin-top: 30px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
