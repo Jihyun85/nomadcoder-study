@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="bg.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="greeting.js" defer></script>
+    <script src="todo.js" defer></script>
+    <script src="weather.js" defer></script>
+    <title>Chrome app -re</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="js-clock-container">
+        <h1 class="js-clock">00:00</h1>
+      </div>
+      <p class="js-greeting greeting">Hello stranger</p>
+      <form class="js-name-form name-form">
+        <input type="text" placeholder="Write your name!" />
+      </form>
+      <form class="js-todo-form todo-form">
+        <span>today</span>
+        <input type="text" placeholder="What you want to do?" />
+      </form>
+      <ul class="js-todo-list todo-list"></ul>
+    </div>
+    <p class="js-weather weather"></p>
+  </body>
+</html>
